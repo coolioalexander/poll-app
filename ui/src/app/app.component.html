@@ -1,0 +1,10 @@
+<main>
+  <div class="content">
+    <h1>How do you build UI?</h1>
+    <p>Check all that apply</p>
+    @for (vote of votes$ | async; track vote.title) {
+      <app-option [vote]="vote"/>
+    }
+  </div>
+</main>
+<router-outlet />

@@ -1,0 +1,6 @@
+<div class="vote">
+  <input type="checkbox" role="switch" class="switch" (change)="onVoteChange($event)"/>
+  <label class="title">{{ vote.title }}</label>
+  <label class="votes">{{ vote.votes }}</label>
+</div>
+<div class="progress" [style.width.%]="vote.percentage" [style.background]="vote.color"></div>
